@@ -1,0 +1,118 @@
+"""
+Python Program Demonstrating All Major Concepts
+"""
+
+# Importing required modules
+import os  # OS module for interacting with the operating system
+import threading  # For multi-threading
+import time  # For time-related functions
+
+# 1. Variables & Data Types
+integer_var = 10  # Integer
+float_var = 10.5  # Float
+string_var = "Hello, Python!"  # String
+boolean_var = True  # Boolean
+list_var = [1, 2, 3, "Python"]  # List
+tuple_var = (4, 5, 6)  # Tuple
+dict_var = {"name": "Alice", "age": 25}  # Dictionary
+set_var = {1, 2, 3, 4}  # Set
+
+# 2. Operators (Arithmetic, Comparison, Logical, Bitwise, Assignment)
+a = 5
+b = 2
+sum_result = a + b  # Arithmetic Operator
+is_equal = a == b  # Comparison Operator
+logical_and = (a > 0 and b > 0)  # Logical Operator
+bitwise_and = a & b  # Bitwise Operator
+a += 2  # Assignment Operator
+
+# 3. Control Statements
+if a > b:
+    print("a is greater than b")
+elif a == b:
+    print("a is equal to b")
+else:
+    print("b is greater than a")
+
+# 4. Loops
+for i in range(5):  # For loop
+    print(f"For Loop Iteration: {i}")
+
+count = 0
+while count < 3:  # While loop
+    print(f"While Loop Count: {count}")
+    count += 1
+
+# 5. Functions
+
+def add_numbers(x, y):
+    """Function with Parameters & Return Value"""
+    return x + y
+
+print("Sum:", add_numbers(10, 20))
+
+# Lambda Function (Anonymous Function)
+square = lambda x: x * x
+print("Square of 5:", square(5))
+
+# 6. Classes & Objects (OOP)
+class Animal:
+    """Basic Class with Constructor and Method"""
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        return f"{self.name} makes a sound"
+
+# Creating Object
+dog = Animal("Dog")
+print(dog.speak())
+
+# 7. Exception Handling
+try:
+    result = 10 / 0  # This will cause ZeroDivisionError
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero!")
+finally:
+    print("Execution completed.")
+
+# 8. File Handling
+with open("example.txt", "w") as file:
+    file.write("This is a sample text file.")
+
+with open("example.txt", "r") as file:
+    print("File Content:", file.read())
+
+# 9. Decorators (Function Wrapping)
+def decorator_func(func):
+    def wrapper():
+        print("Decorator: Function is being called.")
+        func()
+        print("Decorator: Function execution finished.")
+    return wrapper
+
+@decorator_func
+def sample_function():
+    print("Inside the function!")
+
+sample_function()
+
+# 10. Generator (Yielding values lazily)
+def number_generator():
+    for num in range(3):
+        yield num
+
+for number in number_generator():
+    print("Generated number:", number)
+
+# 11. Multi-threading
+def print_numbers():
+    for i in range(5):
+        print(f"Thread: {i}")
+        time.sleep(1)
+
+thread = threading.Thread(target=print_numbers)
+thread.start()
+thread.join()
+
+print("All concepts demonstrated successfully!")
