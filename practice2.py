@@ -94,3 +94,29 @@
 #     # Handle the case where the recognizer could not reach the Google API
 #     print(f"Could not request results from Google Speech Recognition service; {e}")
 #generating random jokes
+# import pyjokes
+
+# joke = pyjokes.get_joke()
+# print("Here's a joke for you:", joke)
+
+#automate mouse and key
+# import pyautogui
+
+# pyautogui.moveTo(100, 100, duration=1)  # Move mouse to (100,100)
+# pyautogui.write("Hello, Python!", interval=0.1)  # Type text
+# import winsound
+
+# frequency = 1000  # Hertz
+# duration = 500  # Milliseconds
+# winsound.Beep(frequency, duration)
+
+# import requests
+
+# # Make a GET request to the GitHub API
+# response = requests.get("https://api.github.com")
+
+# # Print the JSON response from the API
+print(response.json())
+
+
+
