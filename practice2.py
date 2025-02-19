@@ -44,13 +44,54 @@
    
 
     
-lists = [10, 50, 40, 30, 80]
-max_val = lists[0]
-a = 0
+# lists = [10, 50, 40, 30, 80]
+# max_val = lists[0]
+# a = 0
 
-while a < len(lists):
-    if max_val < lists[a]:
-        max_val = lists[a]
-    a += 1
+# while a < len(lists):
+#     if max_val > lists[a]:
+#         max_val = lists[a]
+#     a += 1
 
-print("max value is", max_val)
+# print("max value is", max_val)
+
+#pip install and import package
+
+#Text-to-Speech 
+
+# import pyttsx3
+
+# # Get text input from the user
+# text = input("Enter the text you want to be spoken: ")
+
+# # Initialize the text-to-speech engine
+# sayy = pyttsx3.init()
+
+# # Use the text-to-speech engine to say the user's input
+# sayy.say(text)
+# sayy.runAndWait()
+
+#Speech Recognition 
+import speech_recognition as sr
+
+# Initialize the recognizer
+recognizer = sr.Recognizer()
+
+# Use the microphone as the audio source
+with sr.Microphone() as source:
+    print("Say something...")
+    # Listen for the first phrase and extract it into audio data
+    audio = recognizer.listen(source)
+
+try:
+    # Recognize speech using Google Speech Recognition
+    text = recognizer.recognize_google(audio)
+    print("You said:", text)
+except sr.UnknownValueError:
+    # Handle the case where the recognizer could not understand the audio
+    print("Sorry, I could not recognize your voice.")
+except sr.RequestError as e:
+    # Handle the case where the recognizer could not reach the Google API
+    print(f"Could not request results from Google Speech Recognition service; {e}")
+
+
