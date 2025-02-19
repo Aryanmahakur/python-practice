@@ -71,27 +71,26 @@
 # sayy.say(text)
 # sayy.runAndWait()
 
-#Speech Recognition 
-import speech_recognition as sr
+# Speech Recognition
+# import speech_recognition as sr
 
-# Initialize the recognizer
-recognizer = sr.Recognizer()
+# # Initialize the recognizer
+# recognizerr = sr.Recognizer()
 
-# Use the microphone as the audio source
-with sr.Microphone() as source:
-    print("Say something...")
-    # Listen for the first phrase and extract it into audio data
-    audio = recognizer.listen(source)
+# # Use the microphone as the audio source
+# with sr.Microphone() as source:
+#     print("Say something...")
+#     # Listen for the first phrase and extract it into audio data
+#     audio = recognizerr.listen(source)
 
-try:
-    # Recognize speech using Google Speech Recognition
-    text = recognizer.recognize_google(audio)
-    print("You said:", text)
-except sr.UnknownValueError:
-    # Handle the case where the recognizer could not understand the audio
-    print("Sorry, I could not recognize your voice.")
-except sr.RequestError as e:
-    # Handle the case where the recognizer could not reach the Google API
-    print(f"Could not request results from Google Speech Recognition service; {e}")
-
-
+# try:
+#     # Recognize speech using Google Speech Recognition
+#     text = recognizerr.recognize_google(audio)
+#     print("You said:", text)
+# except sr.UnknownValueError:
+#     # Handle the case where the recognizer could not understand the audio
+#     print("Sorry, I could not recognize your voice.")
+# except sr.RequestError as e:
+#     # Handle the case where the recognizer could not reach the Google API
+#     print(f"Could not request results from Google Speech Recognition service; {e}")
+#generating random jokes
