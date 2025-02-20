@@ -131,4 +131,60 @@ print(is_even(n))  # This will print: True
 print(is_even(3))  # This will print: False
    
 
-m=
+m = 5
+
+def if_mul_5(m):
+    if m % 5 == 0:
+        return "yes multiple of 5",5*2
+    else:
+        return False
+
+print(if_mul_5(m))  # This will print: True
+print(if_mul_5(3))  # This will print: False # This will print: False
+
+def iseven(n):
+    if n % 2 == 0:
+        print(n * n)  # This will print the square of n if n is even
+        return True, "it is even"
+    else:
+        return False, "it is odd"
+
+print(iseven(2))  # This will print: 4 and (True, "it is even")
+print(iseven(3))  # This will print: (False, "it is odd")
+
+def iseven(n):
+    if n % 2 == 0:
+        print(n * n)  # This will print the square of n if n is even
+        return True, "it is even"
+    else:
+        return False, "it is odd"
+
+def another_function():
+    print("Another function is called because the number is even.")
+
+# Call the iseven function and store the result
+result, message = iseven(2)
+
+# Check the result and call another function if the result is True
+if result:
+    print("it is even")
+    another_function()
+else:
+    print("it is odd")
+
+# Example with an odd number
+result, message = iseven(3)
+if result:
+    print("it is even")
+    another_function()
+else:
+    print("it is odd")
+  
+    def def_check(n):
+        if n == "axb":
+            return True, "it is true"
+        else:
+            return False
+    
+    print(def_check("axb"))  # This will print: (True, "it is true")
+    print(def_check("abc"))  # This will print: (False, "it is false")  # This will print: (True, "it is true")
