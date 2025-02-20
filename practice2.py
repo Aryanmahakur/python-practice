@@ -120,4 +120,15 @@
 # print(response.json())
 
 
+n =2
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
 
+print(is_even(n))  # This will print: True
+print(is_even(3))  # This will print: False
+   
+
+m=
