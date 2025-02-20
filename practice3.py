@@ -1,5 +1,4 @@
-  
-    import re
+import re
 
 def is_strong_password(password):
     # Check if the password is at least 8 characters long
@@ -26,4 +25,4 @@ def is_strong_password(password):
 
 # Example usage
 print(is_strong_password("Password123!"))  # This will print: True
-print(is_strong_password("weakpass"))      # This will print: False
+print(is_strong_password("weakpass"))      # This will print: False # This will print: False
