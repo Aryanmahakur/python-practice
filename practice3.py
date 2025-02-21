@@ -29,3 +29,4 @@ print(is_strong_password("weakpass"))      # This will print: False # This will 
 a
 b
 c
+d
