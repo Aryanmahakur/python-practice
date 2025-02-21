@@ -27,3 +27,4 @@ def is_strong_password(password):
 print(is_strong_password("Password123!"))  # This will print: True
 print(is_strong_password("weakpass"))      # This will print: False # This will print: False
 a
+b
