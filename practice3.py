@@ -58,3 +58,50 @@
 #   if i == 0:
 #     zero += 1
 # print(zero)  # Output: 1
+
+# num ={1,2,3,4,5,6,7,8,9,10}
+# sum=0
+# for i in num:
+#     sum +=i
+#     print(sum)
+
+# print(sum)  # Output: 55
+
+# list2=[1,2,3,4,5,6,7,8,9,10,"aryan"]
+# list2[10] = "hey"
+# print(list2)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'hey']
+# list2.append("hey")
+# print(list2)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'aryan', 'hey']
+ 
+# message = "hey how are you hope you doing fine click on this link to get 1000$ and make money"
+
+# for word in message.split():
+#     if word == "click":
+#         print(word ,"found spam")
+#         break
+    
+# # Output: spam hey
+subjectfail = 0
+marksub1 = int(input("Enter your mark: "))
+marksub2 = int(input("Enter your mark: "))
+marksub3 = int(input("Enter your mark: "))
+subject = int(input("Enter the number of subjects: "))
+
+total_marksobtained = marksub1 + marksub2 + marksub3
+total_marks = 100 * subject
+total_percentage = (total_marksobtained / total_marks) * 100
+
+if total_percentage >33:
+    print("You have passed")
+else:
+    print("You have failed")
+
+# Check if the student has failed in any subject
+
+    if marksub1 < 33:
+        subjectfail += 1
+        print("You have failed in subject ",subjectfail)
+    if marksub2 < 33:
+        print("You have failed in subject ",subjectfail)
+    if marksub3 < 33:
+        print("You have failed in subject ",subjectfail)
