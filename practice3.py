@@ -124,4 +124,7 @@
 with open("poem.txt", "r") as file:
     content = file.read()  # Read the entire content of the file
     print(content)  # Print it to the console
-
+content = content.replace("donkey", "#")  # Replace the word "donkey" with "#"
+# Open the file in write mode
+with open("poem.txt", "w") as file:
+    file.write(content)  # Write the modified content to the file
