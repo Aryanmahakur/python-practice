@@ -81,27 +81,30 @@
 #         break
     
 # # Output: spam hey
-subjectfail = 0
-marksub1 = int(input("Enter your mark: "))
-marksub2 = int(input("Enter your mark: "))
-marksub3 = int(input("Enter your mark: "))
-subject = int(input("Enter the number of subjects: "))
+# subjectfail = 0
+# marksub1 = int(input("Enter your mark for subject 1: "))
+# marksub2 = int(input("Enter your mark for subject 2: "))
+# marksub3 = int(input("Enter your mark for subject 3: "))
+# subject = int(input("Enter the number of subjects: "))
 
-total_marksobtained = marksub1 + marksub2 + marksub3
-total_marks = 100 * subject
-total_percentage = (total_marksobtained / total_marks) * 100
+# total_marksobtained = marksub1 + marksub2 + marksub3
+# total_marks = 100 * subject
+# total_percentage = (total_marksobtained / total_marks) * 100
 
-if total_percentage >33:
-    print("You have passed")
-else:
-    print("You have failed")
+# if total_percentage > 33:
+#     print("You have passed")
+# else:
+#     print("You have failed")
 
-# Check if the student has failed in any subject
+# # Check if the student has failed in any subject
+# if marksub1 < 33:
+#     subjectfail += 1
+#     print("You have failed in subject 1")
+# if marksub2 < 33:
+#     subjectfail += 1
+#     print("You have failed in subject 2")
+# if marksub3 < 33:
+#     subjectfail += 1
+#     print("You have failed in subject 3")
 
-    if marksub1 < 33:
-        subjectfail += 1
-        print("You have failed in subject ",subjectfail)
-    if marksub2 < 33:
-        print("You have failed in subject ",subjectfail)
-    if marksub3 < 33:
-        print("You have failed in subject ",subjectfail)
+# print(f"Total subjects failed: {subjectfail}")
