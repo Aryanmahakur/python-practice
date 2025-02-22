@@ -109,9 +109,13 @@
 
 # print(f"Total subjects failed: {subjectfail}")
 
-n =1
+# n = 1
+# m = 5
+# while n <= 10:
+#     print(f"{m} * {n} = {m * n}")
+#     n += 1
+n=10
 m=5
-while n <=10:
-    print(f("{m} * {n} = "), m*n)   
-    n += 1
-   
+while n>0:
+    print(f"{m} * {n} = {m * n}")
+    n -=1
