@@ -114,8 +114,14 @@
 # while n <= 10:
 #     print(f"{m} * {n} = {m * n}")
 #     n += 1
-n=10
-m=5
-while n>0:
-    print(f"{m} * {n} = {m * n}")
-    n -=1
+# n=10
+# m=5
+# while n>0:
+#     print(f"{m} * {n} = {m * n}")
+#     n -=1
+# Open the file in read mode
+# Open poem.txt in read mode
+with open("poem.txt", "r") as file:
+    content = file.read()  # Read the entire content of the file
+    print(content)  # Print it to the console
+
