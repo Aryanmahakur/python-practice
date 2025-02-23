@@ -121,10 +121,22 @@
 #     n -=1
 # Open the file in read mode
 # Open poem.txt in read mode
-with open("poem.txt", "r") as file:
-    content = file.read()  # Read the entire content of the file
-    print(content)  # Print it to the console
-content = content.replace("donkey", "#")  # Replace the word "donkey" with "#"
-# Open the file in write mode
-with open("poem.txt", "w") as file:
-    file.write(content)  # Write the modified content to the file
+# with open("poem.txt", "r") as file:
+#     content = file.read()  # Read the entire content of the file
+#     print(content)  # Print it to the console
+# content = content.replace("donkey", "#")  # Replace the word "donkey" with "#"
+# # Open the file in write mode
+# with open("poem.txt", "w") as file:
+#     file.write(content)  # Write the modified content to the file
+
+# n=int(input("Enter the number: "))
+# if(n%2==0):
+#     print("The number is even")
+# else:
+#     print("The number is odd")
+#         # Output: The number is even
+#         # Output: The number is 
+        
+# a="aryan"
+# reversed_a = a[::-1]
+# print(reversed_a)
