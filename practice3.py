@@ -140,3 +140,32 @@
 # a="aryan"
 # reversed_a = a[::-1]
 # print(reversed_a)
+# num=[20,50,30,40,60,70]
+# a=0
+# b=0
+# while a<len(num):
+#         if b<num[a]:
+#             b=num[a]
+          
+#         a +=1
+       
+# print("biggest number",b)
+            
+# Function to generate and print Fibonacci series up to n terms
+# def fibonacci(n):
+#     a, b = 0, 1  # Initialize the first two terms of the Fibonacci series
+#     for _ in range(n):  # Loop runs n times to generate n terms
+#         print(a, end=" ")  # Print the current term and stay on the same line
+#         a, b = b, a + b  # Update values: new 'a' becomes old 'b', new 'b' becomes sum of old 'a' and 'b'
+
+# # Take user input for the number of terms in the Fibonacci series
+# n_terms = int(input("Enter the number of terms: "))  # Convert input to an integer
+
+# fibonacci(n_terms)  # Call the function to print the Fibonacci series
+# # Check if the entered number is valid
+# if n_terms <= 0:
+#     print("Please enter a positive integer.")  # Display a message for invalid input
+# else:
+#     print("Fibonacci Series:")  # Print heading
+#     fibonacci(n_terms)  # Call the function to print the Fibonacci series
+
